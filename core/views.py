@@ -24,6 +24,6 @@ def request_view(request):
             login(request, user)
             return redirect('/home/')
         else:
-            message_status = "incorrect username or password"
+            message_status = "incorrect username or password!"
         return redirect('/login/')
     return render(request, 'login.html', {})
